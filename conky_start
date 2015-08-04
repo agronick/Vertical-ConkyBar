@@ -1,0 +1,9 @@
+#!/bin/bash
+killall conky
+#conky -c ~/.conkyconfig/configs/conky_bg &
+conky -p 2 -c ~/.conkyconfig/configs/conky_network &
+conky -p 4 -c ~/.conkyconfig/configs/conky_system &
+conky -p 6 -c ~/.conkyconfig/configs/conky_cpu &
+conky -p 8 -c ~/.conkyconfig/configs/conky_ram &
+conky -p 10 -c ~/.conkyconfig/configs/conky_files & 
+exit
